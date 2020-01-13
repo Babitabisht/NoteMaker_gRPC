@@ -1,0 +1,33 @@
+syntax = "proto3";
+package example; //Optional: unique package name.
+
+
+// service NoteService {
+//     rpc List (Empty) returns (NoteList) {}
+// }
+
+// service NoteService {
+//     rpc List (Empty) returns (NoteList) {}
+//     rpc Insert (Note) returns (Note) {}
+// }
+
+service NoteService {
+    rpc List (Empty) returns (NoteList) {}
+    rpc Insert (Note) returns (Note) {}
+    rpc Delete (NoteRequestId) returns (Note) {}
+}
+
+message NoteRequestId {
+    string id = 1;
+}
+
+message Empty {}
+
+message Note {
+    string id = 1;
+    string title = 2;
+    string content = 3;
+}
+message NoteList {
+    repeated Note notes = 1;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "notemakergrpc",
+  "version": "1.0.0",
+  "description": "Note Maker using gRPC",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Babitabisht/NoteMaker_gRPC.git"
+  },
+  "keywords": [
+    "gRPC",
+    "CRUD",
+    "with",
+    "gRPC",
+    "RPC",
+    "nodejs"
+  ],
+  "author": "Babita Bisht",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Babitabisht/NoteMaker_gRPC/issues"
+  },
+  "homepage": "https://github.com/Babitabisht/NoteMaker_gRPC#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.3",
+    "grpc": "^1.24.2",
+    "uuid": "^3.3.3"
+  }
+}
