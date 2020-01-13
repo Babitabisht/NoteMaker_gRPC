@@ -21,7 +21,8 @@ const notes = [
 
 server.addService(notesProto.example.NoteService.service, {
   list: (_, callback) => {
-    callback(null, notes);
+    console.log('------notes----------', notes);
+    callback(null, { notes: notes });
   },
 
   insert: (call, callback) => {
